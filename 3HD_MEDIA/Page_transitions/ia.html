@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../Page_transitions/css/normalize.min.css">
+    <link rel="stylesheet" href="../Page_transitions/css/main.css">
+    <link rel="stylesheet" href="../Page_transitions/css/animate.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+</head>
+<body>
+        
+                           <!-- NEW CODE ENDS --> 
+              
+                          <div class="wrapper">
+                                <div class="container bgimage4 wow fadeIn" data-wow-delay = "0.3s">
+                                        <header class="main-header wow fadeIn" data-wow-delay = "0.5s">
+                                                <a href="../Landing-Copy/landing.html" class="brand-logo">
+                                                    <img src="../Page_transitions/Images/IA/logonew.png" class="logo">
+                                                     <div class="brand-logo-name">3HD MEDIA</div>
+                                                </a>
+                                                <nav class="main-nav">
+                                                     <ul>
+                                                        <li><a href="../Landing-Copy/landing.html">Home</a></li>
+                                                        <li><a href="../Landing-Copy/landing.html">About</a></li>
+                                                        <li><a href="../Parallax_pages/join.html">Join us</a></li>
+                                                        <li><a href="../Parallax_pages/contact.html">Contact</a></li>
+                                                    </ul>
+                                                </nav>
+                                        </header>
+                                        <div class="navigation1 grow1">
+                                                <a href="../Page_transitions/vsms.html"><img src="../Page_transitions/Images/IA/forward.png" class="forward wow zoomIn" data-wow-delay = "0.6s"></a> 
+                                            </div>
+                                            <div class="navigation2 grow2">
+                                                <a href="../Page_transitions/ba.html"><img src="../Page_transitions/Images/IA/backward.png" class="backward wow zoomIn" data-wow-delay = "0.6s"></a>
+                                            </div>
+                                            <div class="navigation3 grow3">
+                                                <a href="../Parallax_pages/ia-x.html"><img src="../Page_transitions/Images/IA/below.png" class="below wow zoomIn" data-wow-delay = "0.6s"></a>
+                                            </div>
+                                </div>
+                         
+<!-- greensock cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+
+// navigation starts here
+
+$("#toggle").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+});
+
+$("#resize ul li a").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+});
+
+$(".close-btn").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+});
+
+// navigation ends here
+
+// nav animation
+
+TweenMax.from("#brand", 1, {
+      delay: 0.4,
+      y: 10,
+      opacity: 0,
+      ease: Expo.easeInOut
+})
+
+TweenMax.staggerFrom("#menu li a", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+}, 0.1);
+
+// nav animation ends
+
+new WOW().init();
+
+</script>
+
+
+     <script>
+     $(document).ready(function(){
+         $(window).scroll(function(){
+             var scroll = $(window).scrollTop();
+             if(scroll>700){
+                 $('main').css("background","rgb(109, 90, 117)");
+                 $('.logo_name2').css("color","rgb(255, 255, 255)");
+                 $('.mad').css("color","rgb(255, 255, 255)");
+                 $('main').css("box-shadow","inset 55px 55px 88px rgba(0, 0, 0, 0.404)");
+             }
+             else{
+                 $('main').css("background","transparent");
+                 $('main').css("box-shadow","");
+                 $('.logo_name2').css("color","");
+                 $('.mad').css("color","");
+             }
+         })
+     });
+     </script>
+                                
+</body>
+</html>

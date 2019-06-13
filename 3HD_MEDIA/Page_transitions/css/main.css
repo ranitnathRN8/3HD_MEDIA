@@ -1,0 +1,420 @@
+/* .container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+} */
+
+/* nav {
+    padding: 40px;
+    grid-column: 3;
+    justify-self: end;
+    z-index: 4;
+}
+
+nav a {
+    margin: 0 20px 0 0;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#FFF;
+    border-radius: 5px;
+    transition: 0.3s
+}
+
+nav a:hover {
+    color: orange;
+} */
+
+/* .title {
+    grid-column: 1/3;
+    grid-row: 2;
+    align-self: center;
+    font-size: 50px;
+    padding: 30px 90px;
+    color: #FFF;
+   
+
+    z-index: 3;
+}
+
+.bgimage1 {
+    background: url("/img/morecows.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgimage2 {
+    background: url("/img/cows-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgimage3 {
+    background: url("/img/cows.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin: 0 ;
+    padding: 0 ;
+    
+    
+}
+
+.container{
+    
+    font-family: 'Poppins';
+    color: white;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.bgimage1{
+    background-image: url("../../Page_transitions/Images/MVS/Mobile_video_streaming.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage2{
+    background-image: url("../../Page_transitions/Images/LBA/Location_based_ad.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage3{
+    background-image: url("../../Page_transitions/Images/BA/Bluetooth_Ad.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage4{
+    background-image: url("../../Page_transitions/Images/IA/Internet_Ad.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage5{
+    background-image: url("../../Page_transitions/Images/VSMS/VSMS.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage6{
+    background-image: url("../../Page_transitions/Images/Vmails/VMAILS.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage7{
+    background-image: url("../../Page_transitions/Images/WA/wifi_advertising.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage8{
+    background-image: url("../../Page_transitions/Images/PL/Product_Launches.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage9{
+    background-image: url("../../Page_transitions/Images/SMM/Social_Media.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage10{
+    background-image: url("../../Page_transitions/Images/RVM/Regional_Voice.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.bgimage11{
+    background-image: url("../../Page_transitions/Images/MVT/Mobile_Video_Trainings.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+}
+
+.brand-logo{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: inherit;
+    margin-left: 2.3rem;
+}
+
+.brand-logo .logo{
+    width: 55px;
+    height: 55px;
+    margin-left: 1rem;
+    position: absolute;
+
+
+}
+.brand-logo-name{
+    margin-left: 5.8rem;
+    font-weight: 580;
+    font-size: 1.6rem;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav{
+    margin-right: 2.3rem;
+}
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 580;
+    padding:1rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav a:hover{
+    color: rgb(170, 177, 190);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.main-nav a:hover::after{
+    color: #010C11;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+/*For page 2*/
+
+.brand-logo1{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: inherit;
+    margin-left: 2.3rem;
+}
+
+.brand-logo1 .logo{
+    width: 55px;
+    height: 55px;
+    margin-left: 1rem;
+    position: absolute;
+
+
+}
+.brand-logo-name1{
+    margin-left: 5.8rem;
+    font-weight: 580;
+    font-size: 1.6rem;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-nav1{
+    margin-right: 2.3rem;
+}
+.main-nav1 ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 580;
+    padding:1rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav1 a:hover{
+    color: rgb(170, 177, 190);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.main-nav1 a:hover::after{
+    color: #010C11;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+/*common starts here*/
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 101px;
+    width: 100%;
+    margin-right: 10rem;
+}
+
+/* .hidden {
+    pointer-events: none;
+    position: relative;
+    opacity: .20;
+}  */
+
+.navigation1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.navigation1 .forward{
+    position: absolute;
+    left: 1320px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+}
+
+.navigation2{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.navigation2 .backward{
+    position: absolute;
+    left: 115px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+}
+
+.navigation3{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.navigation3 .below{
+    position: absolute;
+    left: 765px;
+    top: 530px;
+    width: 50px;
+    height: 50px;
+}
+
+.grow1 .forward{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.grow1:hover .forward{
+    margin: -4%;
+    width: 60px;
+    height: 60px;
+}
+
+.grow2 .backward{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.grow2:hover .backward{
+    margin: -4%;
+    width: 60px;
+    height: 60px;
+}
+
+.grow3 .below{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.grow3:hover .below{
+    margin: -4%;
+    width: 60px;
+    height: 60px;
+}
+
+.transition-fade {
+    -webkit-transition: .4s;
+    transition: .4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
+  

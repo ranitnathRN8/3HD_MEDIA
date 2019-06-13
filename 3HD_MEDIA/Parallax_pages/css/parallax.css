@@ -1,0 +1,1728 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:  rgb(109, 90, 117);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(155, 171, 173);
+}
+
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    opacity: 0.9;
+    background-color: rgb(109, 90, 117);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    z-index: 10;
+}
+
+.nav2{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    opacity: 0.9;
+    background: transparent;
+    /* box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404); */
+    z-index: 10;
+}
+
+.logo{
+    margin: 10px 0 10px -200px;
+    width: 18%;
+}
+.brand-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none; 
+}
+.brand-logo .logo_pic{
+    width: 55px;
+    height: 55px;
+}
+.brand-logo .logo_name{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 580;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+}
+
+.brand-logo2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none; 
+}
+.brand-logo2 .logo_pic{
+    width: 55px;
+    height: 55px;
+}
+.brand-logo2 .logo_name2{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 580;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+}
+
+.brand-logo2 .logo_name2:hover{
+    text-decoration: none;
+    
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: -200px;
+    width: 28%;
+}
+.nav-links a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.9rem;
+    font-weight: 580;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-links a:hover{
+    color: rgb(127, 182, 189);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.nav-links2{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: -200px;
+    width: 28%;
+}
+.nav-links2 a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    font-weight: 580;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-links2 a:hover{
+    color: rgb(174, 189, 189);
+    text-decoration: none;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+/*--------------------------------------------------------------scroll down animation-------------------------------------------------------*/
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    -webkit-transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+.scroll-down3 {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    -webkit-transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+} 
+
+@keyframes fade_move_down {
+    0% {
+          transform: translate(0, -20px) rotate(45deg);
+          opacity: 0;
+    }
+    50% {
+          opacity: 1;
+    }
+    100% {
+          transform: translate(0, 20px) rotate(45deg);
+          opacity: 0;
+    }
+}
+
+/*--------------------------------------------------------------scroll down animation-------------------------------------------------------*/
+
+/*--------------- contact form --------------- */
+
+.form-heading{
+    text-align: center;
+    color: rgb(209, 191, 191);
+    padding-top: 180px;
+    font-size: 64px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-family: 'Arizonia', 'cursive';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.internText{
+    text-align: left;
+    color: rgb(209, 191, 191);
+    font-family: 'Poppins';
+    padding: 20px 140px;
+    font-size: 20px;
+}
+
+ol{
+    text-align: left;
+    padding: 20px 140px;
+}
+ol li{
+    text-align: left;
+    color: rgb(209, 191, 191);
+    font-family: 'Poppins';
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+select{
+    background: transparent;
+    border: 1.5px solid rgb(255, 255, 255) ;
+    padding: 10px 20px;
+    font-family: 'Poppins';
+    color: rgb(209, 191, 191);
+    font-size: 16px;
+}
+
+option{
+    background: rgb(113, 104, 124);
+    color: rgb(0, 0, 0);
+}
+/* .container-fluid{
+    margin-left: 150px;
+} */
+#contact-form {
+    padding: 200px 110px 100px 110px;
+    /*width: 100%; */
+}
+
+#contact-form ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#contact-form li {
+    padding: 10px;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: .8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.send:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
+@media(max-width: 768px) {
+    #contact-form {
+          margin: 5% -8%;
+          width: 98%;
+    }
+}
+
+
+
+
+#join-form1, #join-form2 {
+    padding: 200px 110px 100px 110px;
+    /*width: 100%; */
+}
+
+#join-form1 ul, #join-form2 ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#join-form1 li, #join-form2 li {
+    padding: 10px;
+}
+
+#join-form1 li:last-of-type, #join-form2 li:last-of-type {
+    border-bottom: none;
+}
+
+#join-form1 label, #join-form2 label {
+    display: block;
+    font-size: .8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#join-form1 input, #join-form1 textarea, #join-form2 input, #join-form2 textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.send:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
+@media(max-width: 768px) {
+    #contact-form {
+          margin: 5% -8%;
+          width: 98%;
+    }
+}
+
+/*-------------------form section---------------------------*/
+
+.contact-text{
+    text-align: center;
+    padding-top: 120px;
+    color: rgba(226, 216, 216, 0.815);
+    font-size: 20px;
+}
+
+.section1{
+    height: 1080px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+.section2{
+    height: 1150px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+/* For second page */
+
+.section2_1{
+    height: 1230px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section2_2{
+    height: 1000px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section3_1{
+    height: 1300px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section3_2{
+    height: 1100px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section4_1{
+    height: 1480px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section5_1{
+    height: 1280px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section6_1{
+    height: 1280px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section7_1{
+    height: 1150px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section8_1{
+    height: 1150px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section9_1{
+    height: 1100px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section10_1{
+    height: 1100px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section11_1{
+    height: 1160px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section1-contact{
+    height: 2752px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section1-join{
+    height: 6161px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section4_2{
+    height: 930px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section5_2{
+    height: 950px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section6_2{
+    height: 1150px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section7_2{
+    height: 1220px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section9_2{
+    height: 1332px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section10_2{
+    height: 1145px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section11_2{
+    height: 1072px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+
+
+/*-----------------------------for smm-----------------------------------*/
+
+.section9_3{
+    height: 780px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section9_4{
+    height: 720px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.section9_5{
+    height: 830px;
+    background-color: rgb(60, 48, 65);
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+
+}
+
+.text1 h1{
+    padding-bottom: 15px; 
+    text-transform: uppercase;
+    color: aliceblue;
+    letter-spacing: 0.15rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+}
+.text1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    line-height: 54px;
+    font-size: 18px;
+
+}
+
+.pimg1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/Page2/Group1.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p2img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/LBA/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p3img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/BA/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p4img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/IA/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p5img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/VSMS/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p6img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/Vmails/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p7img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/WA/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p8img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/PL/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p9img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/SMM/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p10img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/RVM/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.p11img1{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/MVT/background.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.pimgContact{
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/Contact/pimgContact.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+}
+
+.pimg2{
+    
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    text-align: center;
+   
+}
+
+.p2img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/LBA/fredrick-suwandi-1258696-unsplash.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+   
+}
+
+.p3img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/BA/device-digital-ecommerce-35550.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+
+   background-attachment: fixed;
+   
+}
+
+.p4img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/IA/adult-beverage-brainstorming-541522.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p5img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/VSMS/adult-beautiful-beauty-915051.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 180%;
+   background-attachment: fixed;
+   
+}
+
+.p6img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/Vmails/adult-businessman-businesswomen-1061588.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p7img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/WA/pic.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p8img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/PL/action-architecture-billboard-1486222.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p9img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/SMM/cellphone-device-digital-marketing-893893.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p10img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/RVM/linkedin-sales-navigator-403997-unsplash.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p11img2{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/MVT/meeting.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p9img3{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/SMM/acer-device-digital-marketing-6168.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p9img4{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/SMM/background-blur-chat-433617.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+.p9img5{
+    
+    height: 718px;
+    background-image: url("../../Parallax_pages/Images/SMM/communication-instagram-lg-35177.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   overflow: hidden;
+    top: 50%;
+   background-attachment: fixed;
+   
+}
+
+
+.fullscreen-video-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fullscreen-video-wrap video{
+    z-index: -1;
+}
+.video-text{
+    position: absolute;
+    padding: 24px;
+    font-weight: 500;
+    top: 280%;
+    font-family: 'Poppins';
+    font-size: 28px;
+    letter-spacing: 4px;
+    border: 0.38px solid black;
+    border-radius: 40px;
+   
+    z-index: 12;
+    background-attachment: fixed;
+    
+}
+
+.video-text2{
+    position: absolute;
+    padding: 24px;
+    font-weight: 500;
+    top: 272%;
+    font-family: 'Poppins';
+    font-size: 42px;
+    letter-spacing: 5px;
+    /* border: 0.38px solid rgb(255, 255, 255); */
+    border-radius: 40px;
+    color: aliceblue;
+    z-index: 12;
+    background-attachment: fixed;
+    
+}
+
+.ptext{
+    position:absolute;
+    font-family: 'Poppins';
+    top:330%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+
+.ptext4{
+    position:absolute;
+    font-family: 'Poppins';
+    top:350%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext6{
+    position:absolute;
+    font-family: 'Poppins';
+    top:325%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext7{
+    position:absolute;
+    font-family: 'Poppins';
+    top:310%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext8{
+    position:absolute;
+    font-family: 'Poppins';
+    top:510%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext9{
+    position:absolute;
+    font-family: 'Poppins';
+    top:710%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext10{
+    position:absolute;
+    font-family: 'Poppins';
+    top:910%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext11{
+    position:absolute;
+    font-family: 'Poppins';
+    top:300%;
+    width:80%;
+    left: 10%;
+    text-align:center;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext .border, .ptext4 .border, .ptext6 .border, .ptext7 .border, .ptext8 .border, .ptext9 .border, .ptext10 .border, .ptext11 .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    opacity: 0.8;
+  }
+  
+  .ptext .border.trans, .ptext4 .border.trans, .ptext6 .border.trans, .ptext7 .border.trans, .ptext8 .border.trans, .ptext9 .border.trans, .ptext10 .border.trans, .ptext11 .border.trans{
+    background-color:transparent;
+  }
+
+.navigation3{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.navigation3 .below{
+    position: absolute;
+    left: 738px;
+    top: -120px;
+    width: 50px;
+    height: 50px;
+}
+
+.grow3 .below{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+}
+
+.grow3:hover .below{
+    margin: -4%;
+    width: 60px;
+    height: 60px; 
+}
+
+.grow3:hover .text-img{
+    visibility: visible;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+         transition: all 1s ease;
+}
+
+.navigation3 .text-img{
+    position: absolute;
+    top: -48px;
+    left: 715px;
+    width: 100px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    background: #fff;
+    opacity: 0.4;
+    border-radius: 10px;
+    padding: 3px;
+    visibility: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+      -o-transition: all .5s ease;
+     -ms-transition: all .5s ease;
+         transition: all .5s ease;
+    /* display: none; */
+}
+
+/* .navigation3 p:hover{
+    display: contents;
+    position: absolute;
+    top: -60px;
+    left: 720px;
+    width: 100px;
+} */
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.whitespace {
+    width: 100%;
+    height: 100px;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+/*------------------for mvs------------------------*/
+
+.project {
+    height: 500px;
+    
+}
+
+.project1 {
+    background: url("../../Parallax_pages/Images/MVS/section-image1.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project1::after {
+    content: "Mobile video streaming";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 90%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*------------------------for mvs-----------------*/
+
+/*------------------------for lba-----------------*/
+
+.project2 {
+    background: url("../../Parallax_pages/Images/LBA/first-image.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project2::after {
+    content: "Location Based Advertising";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*----------------------------for ba-------------------------*/
+
+.project3 {
+    background: url("../../Parallax_pages/Images/BA/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project3::after {
+    content: "Bluetooth Advertising";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-------------------------------for ia-------------------------------*/
+
+.project4 {
+    background: url("../../Parallax_pages/Images/IA/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project4::after {
+    content: "Internet Advertising";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-----------------------------------for vsms-----------------------*/
+
+.project5 {
+    background: url("../../Parallax_pages/Images/VSMS/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project5::after {
+    content: "Video SMS";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*----------------------------------for vmails----------------------*/
+
+.project6 {
+    background: url("../../Parallax_pages/Images/Vmails/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project6::after {
+    content: "Video Emails";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-----------------------------for wa------------------------------*/
+
+.project7 {
+    background: url("../../Parallax_pages/Images/WA/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project7::after {
+    content: "WiFi Advertising";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*------------------------------------for pl-------------------------*/
+
+.project8 {
+    background: url("../../Parallax_pages/Images/PL/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project8::after {
+    content: "Product Launches";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-----------------------------------for smm-----------------------------------*/
+
+.project9 {
+    background: url("../../Parallax_pages/Images/SMM/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project9::after {
+    content: "Social Media Marketing";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-----------------------------------for rvm--------------------------------*/
+
+.project10 {
+    background: url("../../Parallax_pages/Images/RVM/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project10::after {
+    content: "Regional Voice Messages";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/*-------------------------------------for mvt-----------------*/
+
+.project11 {
+    background: url("../../Parallax_pages/Images/MVT/picture.png") no-repeat 3% 5%;
+    background-size: cover;
+    border-radius: 20px;
+
+    box-shadow: inset 55px 55px 88px rgba(0, 0, 0, 0.404);
+    margin-left: 30px; 
+}
+
+.project11::after {
+    content: "Mobile Video Trainings";
+    /* font-family: "Poppins"; */
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-family: 'Arizonia', cursive;
+    position: relative;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+    display: block;
+    top: 22%;
+    left: 98%;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.rowx{
+    display: flex;
+    align-items: flex-start;
+    
+     width: 700px; 
+}
+
+/* .col-lg-4{
+    width: inherit;
+    
+    
+} */
+
+.col-lg-8{
+    width: 220px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.hero-content1 {
+    height: 100vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content2 {
+    height: 80vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content3 {
+    height: 70vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content5 {
+    height: 70vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content6 {
+    height: 100vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content7 {
+    height: 110vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content9 {
+    height: 126vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content10 {
+    height: 100vh;
+    
+    /* align-items: center; */
+    
+}
+
+.hero-content11 {
+    height: 90vh;
+    
+    /* align-items: center; */
+    
+}
+
+
+
+.assign_text{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 140px;
+    margin-left: 400px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 40px;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.164);
+}
+
+/* .hero h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 58px;
+} */
+
+.section_text{
+    text-align: right;
+}
+
+.section_text ul{
+    list-style: none;
+}
+
+.assign_text1{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 400px;
+    margin-left: 140px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    line-height: 40px;
+    color: aliceblue;
+    text-shadow: 0px 4px 4px rgba(126, 122, 122, 0.164);
+}
+
+.section_text1{
+    text-align: left;
+}
+
+/*--------------- footer section --------------- */
+.collab {
+    text-align: right;
+}
+.row_text{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.row_text a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.row_flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.collab p {
+    font-weight: lighter !important;
+    margin-bottom: 20px;
+}
+
+.hr {
+    background: rgba(255, 255, 255, 0.2);
+    height: 2px;
+}
+
+.info h4 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.info p {
+    color: grey;
+    font-weight: lighter;
+}
+
+.info li {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+#fb::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #3b5998;
+}
+
+
+#ig::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #fcaf45;
+}
+
+
+#tw::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #55acee;
+}
+
+
+#yt::before {
+    display: inline-block;
+    content: '';
+    border-radius: 100%;
+    height: 4px;
+    width: 4px;
+    margin-right: 6px;
+    background: #c4302b;
+}
+
+#media, #address {
+    text-align: right;
+}
+
+#media ul {
+    list-style: none;
+}
+
+#media ul li {
+    display: inline-block;
+}
+
+@media(max-width: 768px) {
+    .collab, #personal, #media, #address {
+          text-align: center;
+    }
+
+    .info ul {
+          margin: 0 0 0 -22px;
+          padding: 0;
+    }
+}
